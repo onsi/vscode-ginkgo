@@ -1,0 +1,248 @@
+{
+	"aft": {
+		"prefix": "aft",
+		"body": "\nAfterEach(func() {\n    $0\n})\n",
+		"description": "Ginkgo AfterEach",
+		"scope": "source.go"
+	},
+	"afts": {
+		"prefix": "afts",
+		"body": "\nAfterSuite(func() {\n    $0\n})\n",
+		"description": "Ginkgo AfterSuite",
+		"scope": "source.go"
+	},
+	"bef": {
+		"prefix": "bef",
+		"body": "\nBeforeEach(func() {\n    $0\n})\n",
+		"description": "Ginkgo BeforeEach",
+		"scope": "source.go"
+	},
+	"befs": {
+		"prefix": "befs",
+		"body": "\nBeforeSuite(func() {\n    $0\n})\n",
+		"description": "Ginkgo BeforeSuite",
+		"scope": "source.go"
+	},
+	"by": {
+		"prefix": "by",
+		"body": "\nBy(\"$1\")\n",
+		"description": "Ginkgo By",
+		"scope": "source.go"
+	},
+	"Aft": {
+		"prefix": "Aft",
+		"body": "\nAfterEach(func() {\n    $0\n})\n",
+		"description": "Ginkgo AfterEach",
+		"scope": "source.go"
+	},
+	"Afts": {
+		"prefix": "Afts",
+		"body": "\nAfterSuite(func() {\n    $0\n})\n",
+		"description": "Ginkgo AfterSuite",
+		"scope": "source.go"
+	},
+	"Bef": {
+		"prefix": "Bef",
+		"body": "\nBeforeEach(func() {\n    $0\n})\n",
+		"description": "Ginkgo BeforeEach",
+		"scope": "source.go"
+	},
+	"Befs": {
+		"prefix": "Befs",
+		"body": "\nBeforeSuite(func() {\n    $0\n})\n",
+		"description": "Ginkgo BeforeSuite",
+		"scope": "source.go"
+	},
+	"By": {
+		"prefix": "By",
+		"body": "\nBy(\"$1\")\n",
+		"description": "Ginkgo By",
+		"scope": "source.go"
+	},
+	"Consf": {
+		"prefix": "Consf",
+		"body": "\nConsistently(func() ${1:Interface{\\}} {\n    return $2\n}).Should$3(${4:Equal}($5))\n",
+		"description": "Gomega Consistently (with function)",
+		"scope": "source.go"
+	},
+	"Cons": {
+		"prefix": "Cons",
+		"body": "\nConsistently(${1}).Should$3(${4:Equal}($5))\n",
+		"description": "Gomega Consistently",
+		"scope": "source.go"
+	},
+	"Cont": {
+		"prefix": "Cont",
+		"body": "\nContext(\"$1\", func() {\n    $0\n})\n",
+		"description": "Ginkgo Context",
+		"scope": "source.go"
+	},
+	"Desc": {
+		"prefix": "Desc",
+		"body": "\nDescribe(\"$1\", func() {\n    $0\n})\n",
+		"description": "Ginkgo Describe",
+		"scope": "source.go"
+	},
+	"Evf": {
+		"prefix": "Evf",
+		"body": "\nEventually(func() ${1:Interface{\\}} {\n    return $2\n}).Should$3(${4:Equal}($5))\n",
+		"description": "Gomega Eventually (with function)",
+		"scope": "source.go"
+	},
+	"Ev": {
+		"prefix": "Ev",
+		"body": "\nEventually(${1}).Should$3(${4:Equal}($5))\n",
+		"description": "Gomega Eventually",
+		"scope": "source.go"
+	},
+	"Ex": {
+		"prefix": "Ex",
+		"body": "\nExpect($1).$2To(${3:Equal}($4))\n",
+		"description": "Gomega Expect",
+		"scope": "source.go"
+	},
+	"Exerr": {
+		"prefix": "Exerr",
+		"body": "\nExpect(${1:err}).NotTo(HaveOccurred())\n",
+		"description": "Gomega Error Expectation",
+		"scope": "source.go"
+	},
+	"Exs": {
+		"prefix": "Exs",
+		"body": "\nExpect(${1:Func()}).To(Succeed())\n",
+		"description": "Gomega Succeed Expectation",
+		"scope": "source.go"
+	},
+	"It": {
+		"prefix": "It",
+		"body": "\nIt(\"$1\", func() {\n    $0\n})\n",
+		"description": "Ginkgo It",
+		"scope": "source.go"
+	},
+	"Jus": {
+		"prefix": "Jus",
+		"body": "\nJustBeforeEach(func() {\n    $0\n})\n",
+		"description": "Ginkgo JustBeforeEach",
+		"scope": "source.go"
+	},
+	"Meas": {
+		"prefix": "Meas",
+		"body": "\nMeasure(\"$1\", func(b Benchmarker) {\n    $0\n})\n",
+		"description": "Ginkgo Measure",
+		"scope": "source.go"
+	},
+	"Syncafts": {
+		"prefix": "Syncafts",
+		"body": "\nSynchronizedAfterSuite(func() {\n    ${0://runs on all nodes}\n}, func() {\n    ${1://runs on node 1}\n})\n",
+		"description": "Ginkgo SynchronizedAfterSuite",
+		"scope": "source.go"
+	},
+	"Syncbefs": {
+		"prefix": "Syncbefs",
+		"body": "\nSynchronizedBeforeSuite(func() []byte {\n    ${0://runs on node 1}\n    return $1\n}, func(${2:node1Data} []byte) {\n    ${3://runs on all nodes}\n})\n",
+		"description": "Ginkgo SynchronizedBeforeSuite",
+		"scope": "source.go"
+	},
+	"consf": {
+		"prefix": "consf",
+		"body": "\nConsistently(func() ${1:Interface{\\}} {\n    return $2\n}).Should$3(${4:Equal}($5))\n",
+		"description": "Gomega Consistently (with function)",
+		"scope": "source.go"
+	},
+	"cons": {
+		"prefix": "cons",
+		"body": "\nConsistently(${1}).Should$3(${4:Equal}($5))\n",
+		"description": "Gomega Consistently",
+		"scope": "source.go"
+	},
+	"cont": {
+		"prefix": "cont",
+		"body": "\nContext(\"$1\", func() {\n    $0\n})\n",
+		"description": "Ginkgo Contextg",
+		"scope": "source.go"
+	},
+	"desc": {
+		"prefix": "desc",
+		"body": "\nDescribe(\"$1\", func() {\n    $0\n})\n",
+		"description": "Ginkgo Describe",
+		"scope": "source.go"
+	},
+	"evf": {
+		"prefix": "evf",
+		"body": "\nEventually(func() ${1:Interface{\\}} {\n    return $2\n}).Should$3(${4:Equal}($5))\n",
+		"description": "Gomega Eventually (with function)",
+		"scope": "source.go"
+	},
+	"ev": {
+		"prefix": "ev",
+		"body": "\nEventually(${1}).Should$3(${4:Equal}($5))\n",
+		"description": "Gomega Eventually",
+		"scope": "source.go"
+	},
+	"ex": {
+		"prefix": "ex",
+		"body": "\nExpect($1).$2To(${3:Equal}($4))\n",
+		"description": "Gomega Expect",
+		"scope": "source.go"
+	},
+	"exerr": {
+		"prefix": "exerr",
+		"body": "\nExpect(${1:err}).NotTo(HaveOccurred())\n",
+		"description": "Gomega Error Expectation",
+		"scope": "source.go"
+	},
+	"exs": {
+		"prefix": "exs",
+		"body": "\nExpect(${1:Func()}).To(Succeed())\n",
+		"description": "Gomega Succeed Expectation",
+		"scope": "source.go"
+	},
+	"it": {
+		"prefix": "it",
+		"body": "\nIt(\"$1\", func() {\n    $0\n})\n",
+		"description": "Ginkgo It",
+		"scope": "source.go"
+	},
+	"jus": {
+		"prefix": "jus",
+		"body": "\nJustBeforeEach(func() {\n    $0\n})\n",
+		"description": "Ginkgo JustBeforeEach",
+		"scope": "source.go"
+	},
+	"meas": {
+		"prefix": "meas",
+		"body": "\nMeasure(\"$1\", func(b Benchmarker) {\n    $0\n})\n",
+		"description": "Ginkgo Measure",
+		"scope": "source.go"
+	},
+	"Ω": {
+		"prefix": "Ω",
+		"body": "\nΩ($1).Should$2(${3:Equal}($4))\n",
+		"description": "Gomega Ω",
+		"scope": "source.go"
+	},
+	"Ωerr": {
+		"prefix": "Ωerr",
+		"body": "\nΩ(${1:err}).ShouldNot(HaveOccurred())\n",
+		"description": "Gomega Error Ω",
+		"scope": "source.go"
+	},
+	"Ωs": {
+		"prefix": "Ωs",
+		"body": "\nΩ(${1:Func()}).Should(Succeed())\n",
+		"description": "Gomega Succeed Ω",
+		"scope": "source.go"
+	},
+	"syncafts": {
+		"prefix": "syncafts",
+		"body": "\nSynchronizedAfterSuite(func() {\n    ${0://runs on all nodes}\n}, func() {\n    ${1://runs on node 1}\n})\n",
+		"description": "Ginkgo SynchronizedAfterSuite",
+		"scope": "source.go"
+	},
+	"syncbefs": {
+		"prefix": "syncbefs",
+		"body": "\nSynchronizedBeforeSuite(func() []byte {\n    ${0://runs on node 1}\n    return $1\n}, func(${2:node1Data} []byte) {\n    ${3://runs on all nodes}\n})\n",
+		"description": "Ginkgo SynchronizedBeforeSuite",
+		"scope": "source.go"
+	}
+}

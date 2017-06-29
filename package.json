@@ -1,0 +1,21 @@
+{
+    "name": "vscode-ginkgo",
+    "displayName": "vscode-ginkgo",
+    "description": "Provides code completions and support for Ginkgo and Gomega",
+    "version": "0.0.1",
+    "publisher": "onsi",
+    "engines": {
+        "vscode": "^1.13.0"
+    },
+    "categories": [
+        "Snippets"
+    ],
+    "contributes": {
+        "snippets": [
+            {
+                "language": "go",
+                "path": "./snippets/snippets.json"
+            }
+        ]
+    }
+}
