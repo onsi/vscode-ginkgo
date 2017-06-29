@@ -4,7 +4,7 @@
     "description": "Provides code completions and support for Ginkgo and Gomega",
     "version": "0.0.1",
     "publisher": "onsi",
-    "icon": "./images/vscode-ginkgo.png",
+    "icon": "images/vscode-ginkgo.png",
     "engines": {
         "vscode": "^1.13.0"
     },
