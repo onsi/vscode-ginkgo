@@ -2,7 +2,7 @@
     "name": "vscode-ginkgo",
     "displayName": "vscode-ginkgo",
     "description": "Provides code completions and support for Ginkgo and Gomega",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "publisher": "onsi",
     "icon": "images/vscode-ginkgo.png",
     "engines": {
