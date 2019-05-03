@@ -143,6 +143,12 @@
 		"description": "Ginkgo SynchronizedBeforeSuite",
 		"scope": "source.go"
 	},
+	"When": {
+		"prefix": "When",
+		"body": "When(\"$1\", func() {\n    $0\n})",
+		"description": "Ginkgo When",
+		"scope": "source.go"
+	},
 	"consf": {
 		"prefix": "consf",
 		"body": "Consistently(func() ${1:Interface{\\}} {\n    return $2\n}).Should$3(${4:Equal}($5))",
@@ -243,6 +249,12 @@
 		"prefix": "syncbefs",
 		"body": "SynchronizedBeforeSuite(func() []byte {\n    ${0://runs on node 1}\n    return $1\n}, func(${2:node1Data} []byte) {\n    ${3://runs on all nodes}\n})",
 		"description": "Ginkgo SynchronizedBeforeSuite",
+		"scope": "source.go"
+	},
+	"when": {
+		"prefix": "when",
+		"body": "When(\"$1\", func() {\n    $0\n})",
+		"description": "Ginkgo When",
 		"scope": "source.go"
 	}
 }
